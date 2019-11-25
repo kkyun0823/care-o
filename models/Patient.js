@@ -4,7 +4,7 @@ const PatientSchema = new mongoose.Schema({
   name: String,
   sex: String,
   age: Number,
-  doctor: String
+  chartNum: Number
 });
 
 const model = mongoose.model("Patient", PatientSchema);
