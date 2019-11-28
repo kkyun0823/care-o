@@ -56,6 +56,30 @@ export const sendChart = async (req, res) => {
   res.redirect(routes.patient);
 };
 
+export const setDate = (req, res) => {
+  const {
+    params: { id }
+  } = req;
+  res.render("set-date", { id });
+};
+
+export const sendDate = async (req, res) => {
+  const {
+    body,
+    params: { id }
+  } = req;
+  let result = null;
+
+  result = body["date"];
+
+  try {
+    await Patient.findOneAndUpdate({ _id: id }, { date: result });
+  } catch (error) {
+    console.log(error);
+  }
+  res.redirect(routes.patient);
+};
+
 export const viewName = async (req, res) => {
   const name = await Patient.find({});
   console.log(name);

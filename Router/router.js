@@ -7,7 +7,9 @@ import {
   postAddPatient,
   sendChart,
   patientDetail,
-  deletePatient
+  deletePatient,
+  setDate,
+  sendDate
 } from "../Controllers/controller";
 import routes from "../routes";
 
@@ -24,5 +26,8 @@ globalRouter.get(routes.patientDetail(), patientDetail);
 globalRouter.post(routes.sendChart(), sendChart);
 
 globalRouter.get(routes.deletePatient(), deletePatient);
+
+globalRouter.get(routes.setDate(), setDate);
+globalRouter.post(routes.sendDate(), sendDate);
 
 export default globalRouter;

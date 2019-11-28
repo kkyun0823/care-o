@@ -6,6 +6,8 @@ const CHART = "/chart";
 const PATIENT_DETAIL = "/:id/patient-detail";
 const SEND_CHART = "/:id/send-chart";
 const DELETE_PATIENT = "/:id/delete";
+const SET_DATE = "/:id/set-date";
+const SEND_DATE = "/:id/send-date";
 
 //mobile routes
 
@@ -35,6 +37,20 @@ const routes = {
       return `/${id}/delete`;
     } else {
       return DELETE_PATIENT;
+    }
+  },
+  setDate: id => {
+    if (id) {
+      return `/${id}/set-date`;
+    } else {
+      return SET_DATE;
+    }
+  },
+  sendDate: id => {
+    if (id) {
+      return `/${id}/send-date`;
+    } else {
+      return SEND_DATE;
     }
   },
   patients: PATIENTS

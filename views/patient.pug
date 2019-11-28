@@ -2,5 +2,6 @@
     ul
         each patient in patients
             li=patient.name+patient.sex+patient.age
-                a(href=routes.patientDetail(patient.id)) View Detail
-                a(href=routes.deletePatient(patient.id)) Delete
+                a(href=routes.patientDetail(patient.id)) "상세보기"
+                a(href=routes.deletePatient(patient.id)) "삭제"
+                a(href=routes.setDate(patient.id)) "내원일 설정"
