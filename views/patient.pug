@@ -1,7 +1,39 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  style
+    include style.css
+  title Care-O
+header.main-header
+  a(href='./')
+    img.logoimg
+  ul.menu
+    li
+      a(href='./chart')
+        button 문진표 관리
+    li
+      a(href='./patient')
+        button 환자 관리
 .patient-block
-    ul
+    ul.info
+      a 이름
+      a 성별
+      a 나이
+    ul.patientblock
         each patient in patients
-            li=patient.name+patient.sex+patient.age
-                a(href=routes.patientDetail(patient.id)) "상세보기"
-                a(href=routes.deletePatient(patient.id)) "삭제"
-                a(href=routes.setDate(patient.id)) "내원일 설정"
+            li=patient.name+" "+patient.sex+" "+patient.age
+                a 
+                a(href=routes.patientDetail(patient.id))
+                    button 상세보기
+                a    
+                a(href=routes.deletePatient(patient.id))
+                    button 삭제
+                a    
+                a(href=routes.setDate(patient.id))
+                    button 내원일 설정
+
+a(href='./add-patient')
+    button.addpa 환자추가
+

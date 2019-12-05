@@ -1,0 +1,216 @@
+@import "./reset.css";
+header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  border-bottom: solid 1px #535c68;
+  border-right: solid 1px #535c68;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 7%;
+}
+
+.menu {
+  position: absolute;
+  right: 7%;
+  top: 50px;
+}
+
+.menu > li {
+  display: inline-block;
+}
+
+.menu > li:first-child {
+  margin-right: 20px;
+}
+
+.addpa {
+  position: relative;
+  left: 20%;
+}
+.charting {
+  position: absolute;
+  left: 7%;
+  top: 100px;
+}
+.chart1 {
+  width: 700px;
+  height: 830px;
+  position: relative;
+  background-image: url(https://postfiles.pstatic.net/MjAxOTEyMDJfMjY5/MDAxNTc1Mjc3Nzk0OTQ3.7tAJ_3l7NcF8Bib-Aun5Of_NU_GY3vns9El0-gW63l4g.39BpiIODmjVXZfS9kdqrBBrWAfBisuZxuGYfETPFFPUg.PNG.kkyun0823/%EB%AC%B8%EC%A7%84%ED%91%9C1.png?type=w773);
+}
+.chart2 {
+  width: 700px;
+  height: 830px;
+  position: relative;
+  background-image: url(https://postfiles.pstatic.net/MjAxOTEyMDJfMTA5/MDAxNTc1Mjc4NDgxMzE5.Cbq8S4wibyWctiuAF0rXKztY24b5yFi2eAw5Dz2E76Qg.B0vESSqQvIPs5mZ5Wgl8PwEjmBmT9sXPge_qbvzUcH4g.PNG.kkyun0823/%EB%AC%B8%EC%A7%84%ED%91%9C2.png?type=w773);
+}
+.info > a {
+  position: relative;
+  left: 2.5%;
+}
+.info > a:first-child {
+  margin-right: 13px;
+}
+.info > a:nth-child(2) {
+  margin-right: 10px;
+}
+.patientblock > li {
+  position: relative;
+  left: 2%;
+}
+.patientblock > li > a {
+  position: relative;
+  left: 3%;
+}
+.logoimg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 7%;
+  background-image: url(https://postfiles.pstatic.net/MjAxOTEyMDJfOTQg/MDAxNTc1Mjc0Njc2ODk0.edjYesRgL0UNXKPxQCP2TdatBm1hzghfVKZaIYSVNN0g.CL6Y74wfkOsoBZhvpJmm1IYxAmKcFPnscv07RCJwDsMg.JPEG.kkyun0823/SE-d1c46bd5-b65b-405b-a26b-7b090b4308f3.jpg?type=w773);
+}
+
+.userEL1968702 .container {
+  position: relative;
+}
+.userEL1968702 .video-wrap {
+  position: relative;
+  height: 744px;
+  overflow: hidden;
+  width: 100%;
+  font-family: "Questrial";
+  background-image: url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.userEL1968702 .bgvid {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  background-size: cover;
+}
+.userEL1968702 .vidtext {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  z-index: 10;
+  color: #fff;
+}
+.userEL1968702 .vidtext .text {
+  font-size: 14px;
+}
+.userEL1968702 .inner-box {
+  padding: 0 15px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+s .userEL1968702 h1 {
+  overflow: hidden;
+  overflow: hidden;
+  font-family: "Noto Sans KR";
+  font-size: 52px;
+  font-weight: 400;
+  color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 0;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.userEL1968702 .slides-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #405766;
+  opacity: 0.77;
+  z-index: 5;
+}
+.userEL1968702 h5 {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Roboto";
+  margin: 0;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.userEL1968702 hr {
+  width: 70px;
+  border: 2px solid #fff;
+  margin: 40px auto 30px;
+  border-color: #fff;
+}
+@media (max-width: 1199px) {
+  .userEL1968702 .video-wrap {
+    height: 400px;
+  }
+  .userEL1968702 .bgvid {
+    height: 700px;
+  }
+  .userEL1968702 .vidtext {
+    height: 400px;
+  }
+  .userEL1968702 h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .userEL1968702 .video-wrap {
+    height: 500px;
+  }
+  .userEL1968702 .bgvid {
+    height: 560px;
+  }
+  .userEL1968702 .vidtext {
+    height: 500px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .userEL1968702 .video-wrap {
+    height: 400px;
+  }
+  .userEL1968702 .bgvid {
+    display: none;
+  }
+  .userEL1968702 .vidtext {
+    height: 400px;
+  }
+}
+@media and (max-width: 480px) {
+  .userEL1968702 .video-wrap {
+    height: 300px;
+  }
+  .userEL1968702 .bgvid {
+    height: 370px;
+  }
+  .userEL1968702 .vidtext {
+    height: 300px;
+  }
+}
+@media and (max-width: 345px) {
+  .userEL1968702 h5 {
+    width: 71% !important;
+    margin: 0 auto !important;
+  }
+}

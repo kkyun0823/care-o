@@ -1,3 +1,21 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  style
+    include style.css
+  title Care-O
+header.main-header
+  a(href='./')
+    img.logoimg
+  ul.menu
+    li
+      a(href='./chart')
+        button 문진표 관리
+    li
+      a(href='./patient')
+        button 환자 관리
 form(action = routes.sendDate(id), method="post")
     input(type="text", placeholder="다음 내원일을 입력해주세요.", name = "date")
     input(type = "submit", value = "설정")
